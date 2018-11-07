@@ -8,8 +8,8 @@ RUN mkdir /home/node/.npm-global
 ENV PATH=/home/node/.npm-global/bin:$PATH
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
-# install Firebase CLI
-RUN npm install -g firebase-tools@4.2.0
+# install tools we need
+RUN npm install -g firebase-tools@4.2.0 grunt-cli@1.3.2
 
 # reset user back to root
 USER root
