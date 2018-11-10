@@ -9,7 +9,7 @@ ENV PATH=/home/node/.npm-global/bin:$PATH
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 # install tools we need
-RUN npm install -g firebase-tools@4.2.0 grunt-cli@1.3.2
+RUN npm install -g firebase-tools@4.2.0 grunt-cli@1.3.2 sass@1.14.3 ruby@0.6.1
 
 # reset user back to root
 USER root
